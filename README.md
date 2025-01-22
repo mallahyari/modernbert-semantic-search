@@ -122,15 +122,3 @@ This project is licensed under the MIT License.
 
 - **ModernBERT** for semantic embeddings: [Hugging Face ModernBERT Blog](https://huggingface.co/blog/modernbert)
 - **Milvus** for vector database: [Milvus Documentation](https://milvus.io/docs)
-
-```
-
-```
-
-```
-
-```
-
-```
-
-```
