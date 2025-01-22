@@ -1,0 +1,8 @@
+fastapi
+litellm
+rapidfuzz
+sentence-transformers
+dotenv
+pymilvus
+datasets
+tqdm
