@@ -2,6 +2,10 @@
 
 This repository contains a full-stack application for semantic document search using **ModernBERT** for embedding generation and **Milvus** as the vector database. The backend is built with **FastAPI**, and the frontend is implemented using **Vite**.
 
+## Basic System Architecture
+
+![system_design](system_design.png)
+
 ## Features
 
 - Generate semantic embeddings for documents using ModernBERT.
