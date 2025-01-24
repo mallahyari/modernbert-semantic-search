@@ -43,14 +43,16 @@ def get_suggestions(query: str = Query(..., min_length=1), max_results: int = 5)
 def search_papers(query, max_results=10) -> List[dict]:
     query_prefix = "search_query:"
     query_embeddings = model.encode(query_prefix + " " + query)
+    # query_embeddings = model.encode(query)
     result = client.search(
-        collection_name="modernbert_search",  # Add collection name
+        collection_name="modernbert_search",
         data=[query_embeddings],
         anns_field="dense_vector",
         limit=max_results,
         output_fields=["text"],
         search_params={"metric_type": "COSINE"}
     )
+    # print(result[0])
     records = [
         {"title": paper["entity"]["text"], "score": paper["distance"]}
         for paper in result[0]
@@ -59,7 +61,7 @@ def search_papers(query, max_results=10) -> List[dict]:
 
 
 @app.get("/search")
-async def search(query: str = Query(..., min_length=1), max_results: int = 5):
+async def search(query: str = Query(..., min_length=1), max_results: int = 10):
     results = search_papers(query, max_results)
     return {"query": query, "results": results}
 

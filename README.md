@@ -27,7 +27,7 @@ This repository contains a full-stack application for semantic document search u
 
 ## Document Embedding and Insertion
 
-The process of reading documents, generating embeddings using ModernBERT, and inserting them into the Milvus vector database is handled separately using a Jupyter notebook. This notebook provides a streamlined approach for preprocessing and indexing documents before they can be queried in the application. You can find and run the notebook [here](path/to/your/notebook.ipynb). Make sure to configure the necessary environment variables and Milvus connection details in the notebook.
+The process of reading documents, generating embeddings using ModernBERT, and inserting them into the Milvus vector database is handled separately using a Jupyter notebook. This notebook provides a streamlined approach for preprocessing and indexing documents before they can be queried in the application. You can find and run the notebook [here](https://github.com/mallahyari/twosetai/blob/main/search_modernbert.ipynb). Make sure to configure the necessary environment variables and Milvus connection details in the notebook.
 
 ---
 
